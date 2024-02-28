@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+    int t;
+    cin>>t;
+    while(t-- > 0){
+        int N , streak=0;
+        string S;
+        cin >> N>>S;
+        for(int i=0; i<N; i++){
+            char ch=S[i];
+            if(ch != 'a' && ch != 'e' && ch != 'i' && ch != 'o' && ch != 'u'){
+                ++streak;
+                if(streak>3) break;
+            }else{
+                streak=0;
+            }
+        }
+        if(streak>3) cout<< "NO"<<endl;
+        else cout << "YES"<<endl;
+
+    }
+}
