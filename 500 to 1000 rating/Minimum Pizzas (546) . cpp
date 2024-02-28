@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+    int t;
+    cin>>t;
+    while(t-->0){
+        int x,y;
+        cin>>x>>y;
+        if(y*x%4==0) cout<< y*x/4<<endl;
+        else cout<< y*x/4+1<<endl;
+    }
+}
