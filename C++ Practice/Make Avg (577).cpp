@@ -60,3 +60,23 @@ else
 
 return 0;
 }
+
+//part3
+// Update the program below to solve the problem
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() 
+{
+  int t;
+  cin>>t;
+  while(t--)
+  {
+    int A,B, C;
+    cin>>A>>C;
+    (A-C)%2==0?cout<<(A+C)/2<<endl:cout<<-1<<endl;
+    
+   }
+ return 0;
+}
