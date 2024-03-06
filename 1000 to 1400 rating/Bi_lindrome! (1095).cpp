@@ -12,13 +12,16 @@ int main() {
         int arr[26]={0};
         for(auto ele:s){
             arr[ele-'a']++;
-            
-        }
-        for(auto ele:arr){
-            if(ele>1){ ans=n-2;
+            if(arr[ele-'a']>1){
+                ans=n-2;
                 break;
             }
         }
+        // for(auto ele:arr){
+        //     if(ele>1){ ans=n-2;
+        //         break;
+        //     }
+        // }
         cout<<ans<<endl;
     }
 	// your code goes here
@@ -27,7 +30,7 @@ int main() {
     //CASE1: WORDshitDROW
     //case2: rSacFecGaIrSHIT
     //CASE3: SHITracecar
-    //COUNTFREQ IN ORDER OF APPEARANCE
+    //COUNT FREQ IN ORDER OF APPEARANCE
     // 2 2=SUM
     //LENGHT OF ORIGINAL STIRNG=N-SUM
     // DSADSABCCSNAE
